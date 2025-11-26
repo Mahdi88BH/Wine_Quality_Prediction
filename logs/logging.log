@@ -1,1 +1,17 @@
-[2025-11-26 08:38:05,458: INFO: main: Welcome to our project Data Science Prediction to the Wine Quality]
+[2025-11-26 14:15:58,091: INFO: main: Welcome to our project Data Science Prediction to the Wine Quality]
+[2025-11-26 14:15:58,092: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<<]
+[2025-11-26 14:15:58,094: INFO: common: yaml file : config/config.yaml loaded successfully]
+[2025-11-26 14:15:58,094: INFO: common: yaml file : params.yaml loaded successfully]
+[2025-11-26 14:15:58,095: INFO: common: yaml file : schema.yaml loaded successfully]
+[2025-11-26 14:15:58,096: INFO: common: Created directory at : artifacts]
+[2025-11-26 14:15:58,096: INFO: common: Created directory at : artifacts/data_ingestion]
+[2025-11-26 14:16:01,187: INFO: data_Ingestion: artifacts/data_ingestion/data.zip Download! with following info: 
+ Server: nginx/1.29.3
+Date: Wed, 26 Nov 2025 19:15:59 GMT
+Transfer-Encoding: chunked
+Connection: close
+
+]
+[2025-11-26 14:16:01,192: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<<
+
+x==========x]
