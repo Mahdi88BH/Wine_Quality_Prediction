@@ -1,6 +1,7 @@
 from src.Wine_Quality_Prediction import logger
 from src.Wine_Quality_Prediction.pipeline.data_Ingestion_pipeline import DataIngestionTrainingPipeline
 from src.Wine_Quality_Prediction.pipeline.data_Validation_pipeline import DataValidationTrainingPipeline
+from src.Wine_Quality_Prediction.pipeline.data_Transformatio_pipeline import DataTransformationTrainingPipeline
 
 logger.info("Welcome to our project Data Science Prediction to the Wine Quality")
 
@@ -25,4 +26,15 @@ try:
     logger.info(f">>>>>>> stage {STAGE_NAME} completed <<<<<<<<<\n\nx==========x")
 except Exception as e:
     logger.exception(e)
+    raise e
+
+
+STAGE_NAME = "Data Transformation Stage"
+
+try:
+    logger.info(f">>>>>>> stage {STAGE_NAME} started <<<<<<<<<")
+    data_transformation = DataTransformationTrainingPipeline()
+    data_transformation.initiate_data_transformation()
+    logger.info(f">>>>>>> stage {STAGE_NAME} completed <<<<<<<<<\n\nx==========x")
+except Exception as e:
     raise e
