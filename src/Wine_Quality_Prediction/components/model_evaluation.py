@@ -13,9 +13,9 @@ from pathlib import Path
 
 import os
 
-os.environ["MLFLOW_TRACKING_URL"] = "https://dagshub.com/Mahdi88BH/Wine_Quality_Prediction.mlflow"
-os.environ["MLFLOW_TRACKING_USERNAME"] = "Mahdi88BH"
-os.environ["MLFLOW_TRACKING_PASSWORD"] = "da1c411fd97cfb5322aaa99dd5864543daf608ae"
+# os.environ["MLFLOW_TRACKING_URL"] = "https://dagshub.com/Mahdi88BH/Wine_Quality_Prediction.mlflow"
+# os.environ["MLFLOW_TRACKING_USERNAME"] = "Mahdi88BH"
+# os.environ["MLFLOW_TRACKING_PASSWORD"] = "da1c411fd97cfb5322aaa99dd5864543daf608ae"
 
 class ModelEvaluation:
     def __init__(self, config: ModelEvaluationConfig):

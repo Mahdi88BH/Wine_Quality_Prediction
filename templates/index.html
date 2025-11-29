@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire des Caractéristiques du Vin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Entrer les caractéristiques du vin</h2>
+        <form action="/prediction_result" method="POST">
+                            <!-- Champs générés sans JavaScript, uniquement HTML + CSS -->
+                <label for="fixed_acidity">fixed_acidity</label>
+                <input type="number" step="0.0001" id="fixed_acidity" name="fixed_acidity" required>
+
+                <label for="volatile_acidity">volatile_acidity</label>
+                <input type="number" step="0.0001" id="volatile_acidity" name="volatile_acidity" required>
+
+                <label for="citric_acid">citric_acid</label>
+                <input type="number" step="0.0001" id="citric_acid" name="citric_acid" required>
+
+                <label for="residual_sugar">residual_sugar</label>
+                <input type="number" step="0.0001" id="residual_sugar" name="residual_sugar" required>
+
+                <label for="chlorides">chlorides</label>
+                <input type="number" step="0.0001" id="chlorides" name="chlorides" required>
+
+                <label for="free_sulfur_dioxide">free_sulfur_dioxide</label>
+                <input type="number" step="0.0001" id="free_sulfur_dioxide" name="free_sulfur_dioxide" required>
+
+                <label for="total_sulfur_dioxide">total_sulfur_dioxide</label>
+                <input type="number" step="0.0001" id="total_sulfur_dioxide" name="total_sulfur_dioxide" required>
+
+                <label for="density">density</label>
+                <input type="number" step="0.0001" id="density" name="density" required>
+
+                <label for="pH">pH</label>
+                <input type="number" step="0.0001" id="pH" name="pH" required>
+
+                <label for="sulphates">sulphates</label>
+                <input type="number" step="0.0001" id="sulphates" name="sulphates" required>
+
+                <label for="alcohol">alcohol</label>
+                <input type="number" step="0.0001" id="alcohol" name="alcohol" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
